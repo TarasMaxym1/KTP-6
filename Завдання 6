@@ -1,0 +1,7 @@
+def matrixTranspose(anArray):
+    transposed = [None]*len(anArray[0])
+    for t in range(len(anArray)):
+        transposed[t] = [None]*len(anArray)
+        for tt in range(len(anArray[t])):
+            transposed[t][tt] = anArray[tt][t]
+    print transposed
